@@ -18,6 +18,8 @@
 					<value>vnd.sun.star.extension://org.libreoffice.example.sidebartest/icons/tools-large.png</value>
 				</prop>
 				<prop oor:name="ContextList">
+					<!-- Calc, any, visible ; -->
+					<!-- any, any, visible ; -->
 					<value oor:separator=";">
 						any, any, visible ;
 					</value>
@@ -48,9 +50,16 @@
 				<prop oor:name="OrderIndex" oor:type="xs:int">
 					<value>100</value>
 				</prop>
+				
+				<!-- WantsCanvas -->
+				<!-- When true then an XCanvas object will be passed to the panel factory when the panel is created. Experimental. Defaults to false. -->
 				<prop oor:name="WantsCanvas" oor:type="xs:boolean">
 					<value>true</value>
 				</prop>
+
+				<!-- DefaultMenuCommand -->
+				<!-- UNO service name of detail dialog to show when the user clicks on the detail dialog button in the title bar of the panel. -->
+				<!-- Can be overridden by values in the ContextList. When not command is given then the button in the title bar is not displayed. -->
 				<prop oor:name="DefaultMenuCommand">
 					<value>org.apache.openoffice.sidebar:ShowAnalogClockOptionsDialog</value>
 				</prop>
