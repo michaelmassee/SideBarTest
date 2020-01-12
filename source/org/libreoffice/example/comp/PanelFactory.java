@@ -23,15 +23,6 @@ public class PanelFactory implements XUIElementFactory, XServiceInfo {
 	private static final String IMPLEMENTATION_NAME = PanelFactory.class.getName();
 	private static final String[] SERVICE_NAMES = { __serviceName };
 
-	// public static XSingleComponentFactory __getComponentFactory(final String sImplementationName) {
-	// Log.Instance().println("__getComponentFactory " + sImplementationName);
-	// if (sImplementationName.equals(IMPLEMENTATION_NAME))
-	// return Factory.createComponentFactory(PanelBase.class, SERVICE_NAMES);
-	// else
-	// return null;
-	// }
-	//
-
 	// -----------------------------------------------------------------------------------------------
 	/**
 	 * kommt zuerst

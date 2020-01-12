@@ -28,6 +28,7 @@ public class ProtocolHandler extends ComponentBase implements XDispatchProvider,
 
 	private static final String IMPLEMENTATION_NAME = ProtocolHandler.class.getName();
 	private static final String[] SERVICE_NAMES = { __serviceName };
+	private Map<URL, XStatusListener> maListeners;
 
 	public ProtocolHandler(final XComponentContext xContext) {
 		maListeners = new HashMap<>();
@@ -113,5 +114,4 @@ public class ProtocolHandler extends ComponentBase implements XDispatchProvider,
 			AnalogClockOptionsDialog.Show();
 	}
 
-	private Map<URL, XStatusListener> maListeners;
 }

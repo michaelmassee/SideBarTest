@@ -25,6 +25,10 @@ import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
 
 public abstract class PanelBase implements XToolPanel, XWindowListener, XSidebarPanel, XComponent {
+
+	protected XWindow mxWindow;
+	private final Vector<XEventListener> maDisposeListeners;
+
 	/**
 	 * This is the one method that a derived class has to implement: how to react to size changes of the content window.
 	 */
@@ -150,6 +154,4 @@ public abstract class PanelBase implements XToolPanel, XWindowListener, XSidebar
 		}
 	}
 
-	protected XWindow mxWindow;
-	private final Vector<XEventListener> maDisposeListeners;
 }
